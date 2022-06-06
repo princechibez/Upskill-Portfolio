@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-x: hidden; /* Used this line to remove the horizontal overflow */
+}
+
+section {
+    padding: 100px 200px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.btn {
+    color: #fff;
+    background: #3a6cf4;
+    font-size: 1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition: 0.5 ease;
+}
+
+/* Header Styling */
+
+header {
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding: 15px 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5 ease;
+}
+
+header .navbar ul {
+    display: flex;
+}
+
+header .navbar ul li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+header .navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* .logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-section img { margin: 10px; } */
+
+/* Header styling ended */
+
+/* Main styling begins */
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(Images/techImg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main .content {
+    max-width: 800px;
+}
+
+.main.content h2 {
+    color: white;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.main .content h2 span {
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.main .content .animated-text {
+    position: relative;
+    height: 70px;
+    /* text-align: center;
+    padding: 0 10px;
+    border-radius: 25px;
+    background-color: rgba(240, 240, 240, 0.2);
+    backdrop-filter: blur(2px); */
+    overflow: hidden;
+}
+
+.main .content .animated-text h3 {
+    color: #3d59f5;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.main .content .animated-text h3:nth-child(1) {
+    animation: move 10s infinite;
+}
+
+@keyframes move {
+    0% {
+        margin-top: 0;
+    }
+    25% {
+        margin-top: -70px;
+    }
+    50% {
+        margin-top: -140px;
+    }
+    75% {
+        margin-top: -70px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+    
+}
+
+.main .content .btn {
+    color: #fff;
+    background: #3d59f5;
+    font-size: 1em;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    margin-top: 30px;
+    transition: all 0.3s ease-in;
+}
+
+.main .content .btn:hover {
+    background: #fcb740;
+}
+
+.main .content .media-icons {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.main .content .media-icons a{
+    margin-right: 30px;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-title {
+    height: 50px;
+    position: relative;
+    color: #3e6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 60px;
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    top: 37px;
+    left: 50%;
+    width: 100%;
+    height: 4px;
+    background: #3e6cf4;
+    transform: translateX(-50%);
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #3e6cf4;
+    transform: translateX(-50%);
+}
+
+.about .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.about .content .col-left {
+    position: relative;
+    width: 50%;
+}
+
+.about .content .col-right {
+    position: relative;
+    width: 45%;
+}
+
+.about .content .col-left .img-card {
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+}
+
+.about .content .col-left .img-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about .content .col-right .content-title {
+    color: #000;
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.about .content .col-right .para-text {
+    font-size: 1em;
+    text-align: justify;
+}
+
+.skills {
+    background: #000008;
+}
+
+.skills .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 20px;
+}
+
+.skills .content .col-left {
+    position: relative;
+    width: 46%;
+}
+
+.skills .content .col-left .content-title {
+    margin-bottom: 20px;
+
+}
+
+.skills .content .col-left p {
+    text-align: justify;
+    font-size: 1em;
+}
+
+.skills .content .col-right {
+    position: relative;
+    width: 46%;
+}
+
+.skills .content .col-right .bar {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.skills .content .col-right .bar .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.skills .content .col-right .bar .info span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.skills .content .col-right .bar .line {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background: #999999;
+    border-radius: 2px;
+}
+
+.skills .content .col-right .bar .line::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 2px;
+}
+
+.skills .content .col-right .bar .html::before {
+    width: 95%;
+    background: #e45126;
+}
+
+.skills .content .col-right .bar .css::before {
+    width: 85%;
+    background: #0c73b8;
+}
+
+.skills .content .col-right .bar .javascript::before {
+    width: 70%;
+    background: #e3a324;
+}
+
+.services .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.services .title p {
+    font-size: 1em;
+    width: 80%;
+}
+
+.services .content .card {
+    background: #fff;
+    width: 340px;
+    margin: 10px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(12, 12, 12, 0.15);
+}
+
+.services .content .card .service-icon {
+    color: #3a6cf4;
+    font-size: 2em;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.services .content .card:hover .service-icon {
+    transform: translateY(-10px);
+}
+
+.services .content .card .info {
+    text-align: center;
+}
+
+.services .content .card .info h3 {
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Work */
+.projects .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.projects {
+    background: #000;
+}
+
+.projects .content .card {
+    width: 340px;
+    margin: 15px;
+}
+
+.projects .content .card .card-img {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+.projects .content .card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    transition: 1s ease-out;
+}
+
+.projects .content .card .card-img img:hover {
+    transform: scale(1.2);
+}
